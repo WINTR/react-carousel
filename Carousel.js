@@ -4,6 +4,7 @@ var assign = require('object-assign')
 var Swipeable = React.createFactory(require('react-swipeable'))
 
 var Carousel = React.createClass({
+  displayName: 'Carousel',
   getInitialState: function () {
     return {
       prevIndex: 0,
@@ -81,6 +82,7 @@ var Carousel = React.createClass({
     var transition = 'all 250ms ease-out'
 
     var clear = React.createElement('div', {
+      key: 'clearfix',
       style: {
         height: 0,
         visibility: 'hidden',
