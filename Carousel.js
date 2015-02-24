@@ -127,7 +127,7 @@ var Carousel = React.createClass({
         overflow: 'hidden',
         width: '100%'
       }
-    }), swipeContainer, pagination))
+    }), swipeContainer, pagination)
   }
 })
 
